@@ -1,0 +1,32 @@
+= ar_validations
+
+* http://github.com/dgodd/ar_validations/
+
+{<img src="https://secure.travis-ci.org/dgodd/ar_validations.png?branch=master" alt="Build Status" />}[http://travis-ci.org/dgodd/ar_validations] 
+{<img src="https://codeclimate.com/github/dgodd/ar_validations.png" />}[https://codeclimate.com/github/dgodd/ar_validations]
+
+== DESCRIPTION
+
+Set ActiveRecord Validates based upon database reflection
+
+== INSTALL
+
+ gem install ar_validations
+
+=== Rails 3
+
+In Gemfile
+
+ gem 'ar_validations'
+
+== USAGE
+
+To add ArValidations to an ActiveRecord model, simply include the ArValidations module.
+
+ class Shape < ActiveRecord::Base
+   include ArValidations
+ end
+
+== LICENSE
+
+MIT

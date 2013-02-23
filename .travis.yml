@@ -1,0 +1,12 @@
+language: ruby
+
+rvm:
+  - 1.9.2
+  - 1.9.3
+  - jruby-19mode
+  - rbx-19mode
+
+before_script:
+  - "psql -c 'create database ar_validations_test;' -U postgres >/dev/null"
+
+script: "bundle exec rspec spec"
